@@ -1,0 +1,74 @@
+﻿.customer-conatiner {
+    margin-top: 5%;
+    padding: 2px 200px;
+    font-size: 20px;
+}
+
+.customer-body {
+    padding: 10px 5px;
+    overflow-y: auto;
+}
+
+    .customer-body::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+
+    .customer-body::-webkit-scrollbar-track {
+        background: rgba(235, 235, 235, 0.3);
+        border-radius: 2.5px;
+        width: 5px;
+    }
+
+    .customer-body::-webkit-scrollbar-thumb {
+        background: gray;
+        border-radius: 7.5px;
+        width: 5px;
+    }
+
+.customer-main {
+    background-color: #fff;
+    border-radius: 6px;
+    min-width: 340px;
+    height: 250px;
+    box-shadow: 2px 0px 30px 0 rgba(0, 0, 0, 0.14);
+}
+
+.form-group {
+    position: relative;
+    min-height: 3.5em;
+}
+
+input.form-control {
+    height: 1em;
+    position: absolute;
+    top: 18px;
+    left: 6px;
+    border-bottom: 2px solid black;
+    outline: none;
+    border-width: -5px;
+    border-width: 0 0 2px;
+    width: 95%;
+    padding-bottom: 5px;
+}
+
+label.form-control-label {
+    position: absolute;
+    font-size: 0.8em;
+    top: 0;
+    font-size: 11px;
+    left: 5px;
+    text-transform: capitalize;
+}
+
+.btn {
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(85, 206, 15);
+    border-style: none;
+    color: white;
+    border-radius: 5px;
+}
