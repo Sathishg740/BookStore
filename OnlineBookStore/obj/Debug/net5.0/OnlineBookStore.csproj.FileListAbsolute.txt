@@ -132,5 +132,10 @@ C:\Users\Sathish\source\repos\OnlineBookStore\OnlineBookStore\bin\Debug\net5.0\r
 C:\Users\Sathish\source\repos\OnlineBookStore\OnlineBookStore\obj\Debug\net5.0\Razor\Views\Admin\Details.cshtml.g.cs
 C:\Users\Sathish\source\repos\OnlineBookStore\OnlineBookStore\obj\Debug\net5.0\Razor\Views\Home\ActivityBooks.cshtml.g.cs
 C:\Users\Sathish\source\repos\OnlineBookStore\OnlineBookStore\obj\Debug\net5.0\Razor\Views\Home\ActivityDetails.cshtml.g.cs
-C:\Users\Sathish\source\repos\OnlineBookStore\OnlineBookStore\obj\Debug\net5.0\OnlineBookStore.csproj.AssemblyReference.cache
 C:\Users\Sathish\source\repos\OnlineBookStore\OnlineBookStore\obj\Debug\net5.0\Razor\Views\Home\Cart.cshtml.g.cs
+C:\Users\Sathish\source\repos\OnlineBookStore\OnlineBookStore\obj\Debug\net5.0\Razor\Views\Shared\_Layout1.cshtml.g.cs
+C:\Users\Sathish\source\repos\OnlineBookStore\OnlineBookStore\obj\Debug\net5.0\OnlineBookStore.csproj.AssemblyReference.cache
+C:\Users\Sathish\source\repos\OnlineBookStore\OnlineBookStore\obj\Debug\net5.0\Razor\Views\Home\StoryDetails.cshtml.g.cs
+C:\Users\Sathish\source\repos\OnlineBookStore\OnlineBookStore\obj\Debug\net5.0\Razor\Views\Home\SubjectDetails.cshtml.g.cs
+C:\Users\Sathish\source\repos\OnlineBookStore\OnlineBookStore\obj\Debug\net5.0\Razor\Views\Home\SubjectBooks.cshtml.g.cs
+C:\Users\Sathish\source\repos\OnlineBookStore\OnlineBookStore\obj\Debug\net5.0\Razor\Views\Home\StoryBooks.cshtml.g.cs

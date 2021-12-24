@@ -43,7 +43,7 @@ namespace OnlineBookStore.Controllers
                 connection.Close();
 
             }
-            return View();
+            return View(UserList);
         }
         public IActionResult Create()
         {
@@ -99,7 +99,7 @@ namespace OnlineBookStore.Controllers
                 connection.Close();
 
             }
-            return View();
+            return View(UserList);
         }
     }
 }

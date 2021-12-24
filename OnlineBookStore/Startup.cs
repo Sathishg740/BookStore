@@ -42,7 +42,7 @@ namespace OnlineBookStore
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=LoginSignupPage}/{id?}");
+                    pattern: "{controller=Home}/{action=Registration}/{id?}");
             });
             app.UseMvcWithDefaultRoute();
         }

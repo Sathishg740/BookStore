@@ -86,20 +86,166 @@ namespace OnlineBookStore.Controllers
         {
             return View();
         }
+      
+
         public IActionResult ActivityDetails()
         {
-            return View();
+            List<Book> UserList = new List<Book>();
+            string connectionString = Configuration["ConnectionStrings:MyConnection"];
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                Book book = new Book();
+                connection.Open();
+                string sql = "Select * From Book where B_Id='6'";
+                SqlCommand command = new SqlCommand(sql, connection);
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    while (dataReader.Read())
+                    {
+
+                        book.Type = Convert.ToString(dataReader["Type"]);
+                        book.Name = Convert.ToString(dataReader["Name"]);
+
+                        book.Cost = Convert.ToInt32(dataReader["Cost"]);
+                        book.Author = Convert.ToString(dataReader["Author"]);
+
+                        UserList.Add(book);
+                        ViewBag.Id = Convert.ToInt32(dataReader["B_Id"]);
+                    }
+                }
+                connection.Close();
+
+            }
+            return View(UserList);
+
         }
+
+
         public IActionResult StoryBooks()
         {
             return View();
+        }
+        public IActionResult StoryDetails()
+        {
+            List<Book> UserList = new List<Book>();
+            string connectionString = Configuration["ConnectionStrings:MyConnection"];
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                Book book = new Book();
+                connection.Open();
+                string sql = "Select * From Book where B_Id='3'";
+                SqlCommand command = new SqlCommand(sql, connection);
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    while (dataReader.Read())
+                    {
+
+                        book.Type = Convert.ToString(dataReader["Type"]);
+                        book.Name = Convert.ToString(dataReader["Name"]);
+
+                        book.Cost = Convert.ToInt32(dataReader["Cost"]);
+                        book.Author = Convert.ToString(dataReader["Author"]);
+
+                        UserList.Add(book);
+                        ViewBag.Id = Convert.ToInt32(dataReader["B_Id"]);
+                    }
+                }
+                connection.Close();
+
+            }
+            return View(UserList);
         }
         public IActionResult SubjectBooks()
         {
             return View();
         }
+        public IActionResult SubjectDetails()
+        {
+            List<Book> UserList = new List<Book>();
+            string connectionString = Configuration["ConnectionStrings:MyConnection"];
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                Book book = new Book();
+                connection.Open();
+                string sql = "Select * From Book where B_Id='5'";
+                SqlCommand command = new SqlCommand(sql, connection);
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    while (dataReader.Read())
+                    {
+
+                        book.Type = Convert.ToString(dataReader["Type"]);
+                        book.Name = Convert.ToString(dataReader["Name"]);
+
+                        book.Cost = Convert.ToInt32(dataReader["Cost"]);
+                        book.Author = Convert.ToString(dataReader["Author"]);
+
+                        UserList.Add(book);
+                        ViewBag.Id = Convert.ToInt32(dataReader["B_Id"]);
+                    }
+                }
+                connection.Close();
+
+            }
+            return View(UserList);
+        }
+        //public IActionResult Cart()
+        //{
+        //    List<Book> CartList = new List<Book>();
+        //    string connectionString = Configuration["ConnectionStrings:MyConnection"];
+        //    using (SqlConnection connection = new SqlConnection(connectionString))
+        //    {
+        //        connection.Open();
+        //        string sql = "Select * From Book b, Cart c where c.C_Id = b.B_Id";
+        //        SqlCommand command = new SqlCommand(sql, connection);
+        //        using (SqlDataReader dataReader = command.ExecuteReader())
+        //        {
+        //            while (dataReader.Read())
+        //            {
+        //                Book user = new Book();
+        //                user.B_Id = Convert.ToInt32(dataReader["B_Id"]);
+        //                user.Name = Convert.ToString(dataReader["Name"]);
+        //                user.Cost = Convert.ToInt32(dataReader["Cost"]);
+        //                CartList.Add(user);
+        //                ViewBag.Id = Convert.ToInt32(dataReader["B_Id"]);
+        //            }
+        //        }
+        //        connection.Close();
+
+        //    }
+
+        //    return View(CartList);
+
+        //}
+        //public IActionResult Cartinsert(int id)
+        //{
+        //    string connectionString = Configuration["ConnectionStrings:MyConnection"];
+        //    using (SqlConnection connection = new SqlConnection(connectionString))
+        //    {
+        //        string sql = $"Insert Into Cart(C_Id) Values ('{id}')";
+
+        //        using (SqlCommand command = new SqlCommand(sql, connection))
+        //        {
+        //            command.CommandType = CommandType.Text;
+
+        //            connection.Open();
+        //            command.ExecuteNonQuery();
+        //            connection.Close();
+        //        }
+        //    }
+
+        //    return View();
+        //}
         public IActionResult Cart()
         {
+            List<Book> products = new List<Book>() {
+                new Book () {
+                    B_Id = 3,
+                    Name = "Micky Mouse",
+                    Cost = 1500,
+                   },
+            };
+            ViewBag.products = products;
             return View();
         }
         public IActionResult CustomerDetails()

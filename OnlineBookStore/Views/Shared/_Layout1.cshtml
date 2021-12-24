@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+
+    <link href="~/css/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="~/css/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/css/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/css/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="~/css/assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <div class="logo">
+                <h1><a asp-controller="Home" asp-action="index">BookStore</a></h1>
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="active" asp-controller="Home" asp-action="index">Home</a></li>
+
+                    <li class="dropdown">
+                        <a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li class="dropdown">
+                                <a asp-controller="Home" asp-action="ActivityBooks"><span>ACtivityBook</span> <i class="bi bi-chevron-right"></i></a>
+
+                            </li>
+
+                            <li class="dropdown">
+                                <a asp-controller="Home" asp-action="iphone"><span>StoryBook</span> <i class="bi bi-chevron-right"></i></a>
+
+                            </li>
+
+                            <li class="dropdown">
+                                <a asp-controller="Home" asp-action="windows"><span>SubjectBook</span> <i class="bi bi-chevron-right"></i></a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">Cart</a></li>
+
+                    <li><a asp-controller="Home" asp-action="Registration">Logout</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+
+        </div>
+    </header>
+
+    <div>
+        <br />
+
+        @RenderBody()
+
+    </div>
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class=""></i> <a href="#">Home</a></li>
+                            <li><i class=""></i> <a href="#">About us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h4>Visit our store</h4>
+                        <p>
+                            BookStore<br>
+                            thoughtfocus bannerughatta road banglore<br>
+                            india <br><br>
+                            <strong>Phone:</strong> 9876543210<br>
+                            <strong>Email:</strong> info@BookStore.com<br>
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-info">
+                     <div class="social-links mt-3">
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>BookStore</span></strong>. All Rights Reserved
+            </div>
+
+        </div>
+       
+       
+    </footer>
+
+
+    <script src="~/js/purecounter.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/glightbox.min.js"></script>
+    <script src="~/js/isotope.pkgd.min.js"></script>
+    <script src="~/js/swiper-bundle.min.js"></script>
+    <script src="~/js/noframework.waypoints.js"></script>
+
+
+    <script src="~/js/main.js"></script>
+</body>
+</html>

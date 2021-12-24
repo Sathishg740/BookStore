@@ -1,4 +1,7 @@
-﻿form {
+﻿h1 {
+    align-items: center
+}
+form {
     margin: 0 auto;
     width: 300px
 }

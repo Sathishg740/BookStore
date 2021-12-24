@@ -1,10 +1,97 @@
 ﻿@model OnlineBookStore.Models.CustomerDetails
 @{
     ViewData["Title"] = "CustomerDetails";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
-<link rel="stylesheet" href="~/css/Customer.css" />
+<style>
+    .customer-conatiner {
+        margin-top: 5%;
+        padding: 2px 200px;
+        font-size: 20px;
+    }
+
+    .customer-body {
+        padding: 10px 5px;
+        overflow-y: auto;
+    }
+
+        .customer-body::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+
+        .customer-body::-webkit-scrollbar-track {
+            background: rgba(235, 235, 235, 0.3);
+            border-radius: 2.5px;
+            width: 5px;
+        }
+
+        .customer-body::-webkit-scrollbar-thumb {
+            background: gray;
+            border-radius: 7.5px;
+            width: 5px;
+        }
+
+    .customer-main {
+        background-color: #fff;
+        border-radius: 6px;
+        min-width: 340px;
+        height: 460px;
+        box-shadow: 2px 0px 30px 0 rgba(0, 0, 0, 0.14);
+    }
+
+    .form-group {
+        position: relative;
+        min-height: 3.5em;
+    }
+
+    input.form-control {
+        top: 18px;
+        left: 6px;
+        border-bottom: 2px solid black;
+        outline: none;
+        padding-bottom: 5px;
+    }
+
+    .form-control {
+        /* display: block; */
+        width: 100%;
+        /* font-size: 1rem; */
+        font-weight: 400;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-radius: 0.25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+    label.form-control-label {
+        position: absolute;
+        font-size: 0.8em;
+        top: 0;
+        font-size: 11px;
+        left: 5px;
+        text-transform: capitalize;
+        border-style: outset;
+    }
+
+    .btn {
+        margin: 10px 0;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: rgb(85, 206, 15);
+        border-style: none;
+        color: white;
+        border-radius: 5px;
+    }
+
+</style>
 
 <div class="customer-conatiner">
     <div class="customer-main">

@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewData["Title"] = "ActivityBooks";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
 <!DOCTYPE html>
@@ -54,6 +54,11 @@
             background-color: #2980b9;
             color: white;
             transform: rotateY(180deg);
+            font-family: fantasy;
+            border: dashed
+        }
+        .container{
+            margin:50px;
         }
     </style>
 </head>
@@ -73,7 +78,7 @@
                         <div class="flip-card-back">
                             <h1>Fun Activity</h1>
                             <p>Price: </p>
-                            <button>View</button>
+                            <a href="/Home/ActivityDetails"><button>View</button></a>
                         </div>
                     </div>
                 </div>
@@ -87,7 +92,7 @@
                         <div class="flip-card-back">
                             <h1>Brain Activity</h1>
                             <p>Price: </p>
-                            <button>View</button>
+                            <a href="/Home/ActivityDetails"><button>View</button></a>
                         </div>
                     </div>
                 </div>
